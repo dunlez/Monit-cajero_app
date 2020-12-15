@@ -20,7 +20,7 @@ export default {
   created: function () {
     this.username = this.$route.params.username;
     let self = this;
-    axios.get("http://localhost:8000/user/balance/" + this.username)
+    axios.get("https://monit-cajero-api.herokuapp.com/user/balance/" + this.username)
       .then((result) => {
         self.balance = result.data.balance;
       })

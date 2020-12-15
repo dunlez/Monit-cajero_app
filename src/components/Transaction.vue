@@ -58,7 +58,7 @@ export default {
         value: this.cantidad        
       }
 
-      axios.put("http://localhost:8000/user/transaction/", data)
+      axios.put("https://monit-cajero-api.herokuapp.com/user/transaction/", data)
       .then(response => {
           alert("La transacción se realizo con exito");
           this.$router.push({name: "user_balance", params: { username: data.username } });
@@ -71,7 +71,7 @@ export default {
   created: function() {
     var current_username = localStorage.getItem("current_username");
     let self = this;
-    axios.get("http://localhost:8000/user/transactions/" + current_username)
+    axios.get("https://monit-cajero-api.herokuapp.com/user/transactions/" + current_username)
       .then((result) => {
         self.transactions = result.data;
       })
