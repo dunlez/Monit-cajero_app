@@ -2,7 +2,7 @@
   "name": "cajero_app123",
   "version": "1.0.0",
   "description": "Cajero prueba MinTIC",
-  "author": "Camilo <jccastrop@unal.edu.co>",
+  "author": "Duván <dunlez10@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",

@@ -50,10 +50,10 @@ export default {
     }
   },
   beforeCreate: function () {
-    localStorage.setItem("current_username", "andres18");
+    localStorage.setItem("current_username", "Duván");
     localStorage.setItem("isAuth", true);
 
-    this.$router.push({ name: "user", params: { usuario: "andres18" } });
+    this.$router.push({ name: "user", params: { usuario: "Duván" } });
   },
 };
 </script>
